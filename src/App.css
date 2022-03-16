@@ -1,8 +1,9 @@
-
-body{
+body {
   background-color: #eff3f8;
   color: #212121;
+  font-family: "Roboto", sans-serif;
 }
+
 .App {
   text-align: center;
 }
@@ -33,11 +34,80 @@ body{
   color: #61dafb;
 }
 
+.select {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.clearButton {
+  padding: 5px;
+  background-color: #212121;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.paginationContainer {
+  display: flex;
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+.paginationPageLink {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  color: #212121;
+  text-decoration: none;
+  background-color: white;
+}
+
+.paginationActiveLink {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.paginationActiveLink:hover {
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .select {
+    width: 80%;
+  }
+  .paginationContainer {
+    justify-content: start;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 900px) {
+  .select {
+    width: 70%;
+  }
+  .paginationContainer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .select {
+    width: 40%;
+  }
+  .paginationContainer {
+    justify-content: center;
   }
 }
