@@ -89,7 +89,7 @@ function App() {
   return (
     <div className="App container">
       {isLoading ? (
-       <Loader type="Rings" color="#848484" height={180} width={180} />
+       <Loader type="Rings" color="#848484" height={180} width={180} className="loader"/>
       ) : (
         <>
           <div className="row">

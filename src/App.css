@@ -92,6 +92,11 @@ body {
   .paginationContainer {
     justify-content: start;
   }
+  .loader {
+    position:absolute;
+    top: 30%;
+    left: 30%;
+  }
 }
 
 @media only screen and (min-width: 451px) and (max-width: 900px) {
@@ -101,6 +106,11 @@ body {
   .paginationContainer {
     justify-content: center;
   }
+  .loader {
+    position:absolute;
+    top: 30%;
+    left: 40%;
+  }
 }
 
 @media only screen and (min-width: 901px) {
@@ -109,5 +119,10 @@ body {
   }
   .paginationContainer {
     justify-content: center;
+  }
+  .loader {
+    position:absolute;
+    top: 30%;
+    left: 43%;
   }
 }
