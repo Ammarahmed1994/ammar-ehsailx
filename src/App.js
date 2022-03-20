@@ -36,9 +36,8 @@ function App() {
 
         // reduced the range, because the request was timing out most of the time
         const startDate = new Date("2022-01-01T08:28:41.917Z");
-        // it was errorring after 12:00am, so I used a static date
-        // const endDate = new Date();
-        const endDate = new Date("2022-03-16T08:28:41.917Z");
+        // endDate was errorring between 12:00am and 1:00am, with a message you have to use date between ${some_date_in_1980} and Mar 16, 2022. But It disappeard after 1:00am
+        const endDate = new Date();
         const nasaPicturesResponse = await getNASAPictures(startDate, endDate);
         const nasaFilteredPictures = nasaPicturesResponse?.filter(
           (picture) => picture.media_type === `image`
